@@ -1,0 +1,20 @@
+.nav-menu {
+    background-color: black;
+    font-size: 30px;
+    font-weight: 600;
+    height: 100px;
+}
+
+.nav-menu .nav-item {
+    display: inline-block;
+    margin: 25px 150px;
+}
+
+.nav-menu div a {
+    text-decoration: none;
+    color: orangered;
+}
+
+.nav-menu .nav-item :hover {
+    color: white;
+}
