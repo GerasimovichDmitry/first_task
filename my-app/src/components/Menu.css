@@ -1,20 +1,38 @@
 .nav-menu {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
     background-color: black;
-    font-size: 30px;
-    font-weight: 600;
     height: 100px;
 }
 
-.nav-menu .nav-item {
-    display: inline-block;
-    margin: 25px 150px;
+.nav-menu .nav-block {
+    margin: 25px 100px;
 }
 
 .nav-menu div a {
+    font-size: 30px;
+    font-weight: 600;
     text-decoration: none;
     color: orangered;
 }
 
-.nav-menu .nav-item :hover {
+.nav-menu .nav-block .nav-item :hover {
     color: white;
+}
+
+.drop-down {
+    display: none;
+    margin-top: -85px;
+    background-color: black;
+    color: orangered;
+    font-size: 20px;
+}
+
+.drop-down .show {
+    margin-top: 170px;
+    display: block;
+}
+
+.drop-down div {
+    border: 2px solid darkorange;
 }
