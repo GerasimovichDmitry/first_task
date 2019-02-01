@@ -1,93 +1,39 @@
 import React from 'react';
 import './Menu.css';
+import {NavLink} from "react-router-dom"
 
 
 class Menu extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            ind: false,
-            form: false,
-            clock: false,
-            time: new Date(),
-        }
-    }
-
-
-    changeIndex = (e) => {
-        if (e.currentTarget.innerHTML === 'Drop down') {
-            this.setState({
-                ind: !this.state.ind
-            })
-        } else if (e.currentTarget.innerHTML === 'Form'){
-            this.setState({
-                form: !this.state.form
-            })
-        }else if (e.currentTarget.innerHTML === 'Clock'){
-            this.setState({
-                clock: !this.state.clock
-            })
-        }
-
-    };
 
     render() {
         return (
             <div className="nav-menu">
                 <div className='nav-block'>
                     <div className='nav-item'>
-                        <a href='#' onClick={this.changeIndex.bind(this)}>
+                        <NavLink exact to="/clock">
                             Clock
-                        </a>
-                    </div>
-                    <div className={this.state.clock ? 'clock show' : 'hide'}>
-                        {this.state.time.toLocaleTimeString()}
+                        </NavLink>
                     </div>
                 </div>
                 <div className='nav-block'>
                     <div className='nav-item'>
-                        <a href='#' onClick={this.changeIndex.bind(this)}>
+                        <NavLink to="/form">
                             Form
-                        </a>
-                    </div>
-                    <div  className={this.state.form ? 'form show' : 'hide'}>
-                        <div>
-                        <input placeholder=' Write your nickname'/>
-                        <input placeholder=' Write your password'/>
-                            <div>
-                            <button>
-                                Log in
-                            </button>
-                            </div>
-                        </div>
+                        </NavLink>
                     </div>
                 </div>
                 <div className='nav-block'>
                     <div className='nav-item'>
-                        <a href='/'>
+                            <NavLink exact to="/">
                             Link
-                        </a>
+                        </NavLink>
                     </div>
                 </div>
                 <div className='nav-block'>
                     <div className='nav-item'>
-                        <a href='#' onClick={this.changeIndex.bind(this)}>
+                        <NavLink to="/drop_down">
                             Drop down
-                        </a>
-                    </div>
-                    <div className={this.state.ind ? 'drop-down show' : 'hide'}>
-                        <div>
-                            ReactJS
-                        </div>
-                        <div>
-                            Native JS
-                        </div>
-                        <div>
-                            CSS
-                        </div>
-                        <div>
-                            HTML
-                        </div>
+                        </NavLink>npm
                     </div>
                 </div>
 
