@@ -1,0 +1,20 @@
+.hide {
+    display: none;
+}
+
+.clock.show {
+    background-color: black;
+    height: 180px;
+    color: orangered;
+    width: 1000px;
+    margin-left: 400px;
+    border-radius: 15px;
+    border: orangered solid 2px;
+    margin-top: 300px;
+}
+
+.clock.show div {
+    margin-top: -30px;
+    font-size: 30px;
+}
+
