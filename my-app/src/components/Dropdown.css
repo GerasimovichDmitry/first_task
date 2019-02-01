@@ -1,0 +1,16 @@
+.hide {
+    display: none;
+}
+
+.drop-down.show {
+    font-size: 30px;
+    margin-top: 35px;
+    display: block;
+    background-color: black;
+    color: orangered;
+}
+
+.drop-down div {
+    border: 2px solid darkorange;
+}
+
