@@ -33,7 +33,7 @@ class Menu extends React.Component {
                     <div className='nav-item'>
                         <NavLink to="/drop_down">
                             Drop down
-                        </NavLink>npm
+                        </NavLink>
                     </div>
                 </div>
 
